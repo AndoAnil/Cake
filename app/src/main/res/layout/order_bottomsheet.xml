@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/RelLay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/cakeImage_order"
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="20dp"
+                        android:scaleType="center"
+                        android:src="@color/themecolor" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/cake_type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text=""
+                    android:textColor="@color/themecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/cake_weight_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text=""
+                    android:textColor="@color/themecolor"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:id="@+id/RelLay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RelLay1"
+            android:layout_marginTop="10dp">
+
+            <include layout="@layout/order_center" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_below="@id/RelLay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RelLay3">
+            <LinearLayout
+                android:id="@+id/LineOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/themecolor"
+                    android:layout_gravity="center"
+                    android:text="Payment Mode"
+                    android:gravity="left"
+                    android:textSize="24dp"
+                    />
+                <TextView
+                    android:id="@+id/restorent_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/themecolor"
+                    android:layout_gravity="center"
+                    android:text="Cash on delivery"
+                    android:gravity="center"
+                    android:textSize="24dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/last"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RelLay3">
+            <LinearLayout
+                android:padding="10dp"
+                android:id="@+id/Linear21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Price"
+                    android:gravity="left"
+                    android:textSize="24dp"
+                    />
+                <TextView
+                    android:id="@+id/cake_price_order"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="24dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_below="@id/Linear21"
+                android:id="@+id/LinearLay11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Quantity"
+                    android:gravity="left"
+                    android:textSize="24dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+                <EditText
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/how_much_cake"
+                    android:hint="Quantity"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/themecolor"
+                    android:background="@drawable/spinner_button"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_below="@id/LinearLay11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Total Ammount"
+                    android:gravity="left"
+                    android:textSize="24dp"
+                    />
+                <TextView
+                    android:id="@+id/total_ammount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="24dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/last">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirm_order_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Confirm order"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/rount_btn"
+            android:textSize="18dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Welcome"
+            android:textColor="@color/themecolor"
+            android:textSize="42dp"
+            android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/input_background"
+                app:boxStrokeColor="@color/themecolor">
+
+                <EditText
+                    android:id="@+id/buyer_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_background"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/themecolor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/input_background"
+                app:boxStrokeColor="@color/themecolor">
+
+                <EditText
+                    android:id="@+id/buyer_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_background"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/themecolor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buyer_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/rount_btn"
+            android:textSize="18dp" />
+
+
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/buyer_login_progress"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/themecolor"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait"
+            android:layout_gravity="center"
+            android:id="@+id/buyer_login_wait"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</RelativeLayout>

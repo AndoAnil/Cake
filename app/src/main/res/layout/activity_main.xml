@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="250dp"
+        android:text="@string/cake"
+        android:textSize="18dp"
+        android:gravity="left"
+        android:textColor="@color/themecolor"
+        android:textStyle="bold"
+        android:fontFamily="@font/baloo_bhai"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_maker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button_background"
+            android:layout_margin="10dp"
+            android:text="Get started as Maker"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/baloo_bhai"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_buyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button_background"
+            android:layout_margin="10dp"
+            android:text="Get started as Buyer"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/baloo_bhai"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
